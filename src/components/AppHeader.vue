@@ -1,5 +1,5 @@
 <script>
-import navLinks from './data/links.js';
+import { store } from '../store.js'
 import SiteButton from './SiteButton.vue';
 export default {
     name: 'AppHeader',
@@ -8,7 +8,7 @@ export default {
     },
     data() {
         return {
-            navLinks,
+            store,
         }
     }
 }
@@ -30,7 +30,7 @@ export default {
                 <!-- /.left_nav -->
 
                 <div class="right_nav">
-                    <a href="" v-for="link in navLinks">{{ link }}</a>
+                    <a href="" v-for="link in store.headerLinks">{{ link }}</a>
                     <!-- modificare cart con font owesome -->
                 </div>
                 <!-- /.right_nav -->
