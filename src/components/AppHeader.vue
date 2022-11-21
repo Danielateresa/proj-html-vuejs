@@ -96,6 +96,10 @@ export default {
 
     .col-3 {
         color: $silver;
+
+        h1 {
+            color: $light;
+        }
     }
 
     .row {
