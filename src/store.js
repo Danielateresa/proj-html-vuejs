@@ -39,9 +39,8 @@ export const store = reactive({
     },
     {
         name: 'patrick monroe',
-        img: '/info12x.jpg',
         magazine: 'globe and mail',
-        title: 'perfect for groups',
+        img: '/info12x.jpg',
         buttonText: 'read full article',
         text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis vero odit illo labore est nam architecto velit ducimus autem tenetur.'
     }],
@@ -52,12 +51,12 @@ export const store = reactive({
         text: 'By admin | Juanuary 7th, 2020 | Categories: News'
     },
     {
-        title: 'the best coffe in town',
+        title: 'discover our new menu',
         img: '/blog72x-600x687.jpg',
         text: 'By admin | Juanuary 7th, 2020 | Categories: News'
     },
     {
-        title: 'the best coffe in town',
+        title: 'we now accept square!',
         img: '/blog82x-600x687.jpg',
         text: 'By admin | Juanuary 7th, 2020 | Categories: News'
     },
@@ -77,4 +76,76 @@ export const store = reactive({
         buttonText: 'view takeout menu',
     },
 
+    menu: [
+        {
+            title: 'hors d\'oeuvres',
+            plates: [{
+                name: 'ahi salmon nigiri',
+                price: '$ 48',
+                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo labore officia suscipit.'
+            },
+            {
+                name: 'umi masu salad',
+                price: '$ 21',
+                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo labore officia suscipit.'
+            },
+            {
+                name: 'temaki with crab',
+                price: '$ 32',
+                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo labore officia suscipit.'
+            },
+            {
+                name: 'california rolls',
+                price: '$ 22',
+                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo labore officia suscipit.'
+            }]
+        },
+        {
+            title: 'main course',
+            plates: [{
+                name: 'braised abalone',
+                price: '$ 52',
+                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo labore officia suscipit.'
+            },
+            {
+                name: 'twice cooked pork',
+                price: '$ 21',
+                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo labore officia suscipit.'
+            },
+            {
+                name: 'kung pao chicken',
+                price: '$ 32',
+                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo labore officia suscipit.'
+            },
+            {
+                name: 'char siu & sushis',
+                price: '$ 48',
+                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo labore officia suscipit.'
+            }]
+        },
+        {
+            title: 'desserts',
+            plates: [{
+                name: 'chocolate ball cake',
+                price: '$ 13',
+                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo labore officia suscipit.'
+            },
+            {
+                name: 'lime pie eith crust',
+                price: '$ 14',
+                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo labore officia suscipit.'
+            },
+            {
+                name: 'rasberry pear cake',
+                price: '$ 18',
+                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo labore officia suscipit.'
+            },
+            {
+                name: 'cafè au lait',
+                price: '$ 6',
+                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo labore officia suscipit.'
+            }]
+        },
+
+    ]
 })
