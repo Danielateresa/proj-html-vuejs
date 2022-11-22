@@ -71,8 +71,8 @@ export const store = reactive({
     },
 
     infoTakeout: {
-        slogan: 'fine dinign experience',
-        title: 'best table in town',
+        slogan: 'enjoy your meal at home',
+        title: 'takeout now available',
         text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo labore officia suscipit quia cumque.',
         buttonText: 'view takeout menu',
     },
