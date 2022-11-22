@@ -17,11 +17,13 @@ export default {
 
 <template>
 
-    <section class="critics py-4 text-center">
-        <h3 class="my-5 ">What critics are saying about us</h3>
-
+    <section class="critics py-4 text-center d-flex flex-column text-center">
+        <h3 class="mt-5">What critics are saying about us</h3>
+        <div class="line my-4 align-self-center mb-3"></div>
         <div class="container my-4 p-2 text-start">
+
             <div class="row upper w-100">
+
                 <div class="col-6 h-100 text-end gy-0 px-0">
                     <img class="w-100" src="../../assets/img/blog72x-600x687.jpg" alt="cooking woman">
                 </div>

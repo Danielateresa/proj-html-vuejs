@@ -44,6 +44,23 @@ export const store = reactive({
         title: 'perfect for groups',
         buttonText: 'make a reservation',
         text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis vero odit illo labore est nam architecto velit ducimus autem tenetur.'
-    }]
+    }],
+
+    news: [{
+        title: 'the best coffe in town',
+        img: '/blog92x-600x687.jpg',
+        text: 'By admin | Juanuary 7th, 2020 | Categories: News'
+    },
+    {
+        title: 'the best coffe in town',
+        img: '/blog72x-600x687.jpg',
+        text: 'By admin | Juanuary 7th, 2020 | Categories: News'
+    },
+    {
+        title: 'the best coffe in town',
+        img: '/blog82x-600x687.jpg',
+        text: 'By admin | Juanuary 7th, 2020 | Categories: News'
+    },
+    ],
 
 })
