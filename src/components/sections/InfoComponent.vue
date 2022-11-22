@@ -39,7 +39,11 @@ export default {
                 </div>
 
                 <siteButton class="site_button">
+                    <span class="me-2" v-show="button === 'view takeout menu'">
+                        <font-awesome-icon icon="fa-solid fa-car" />
+                    </span>
                     {{ button }}
+
                 </siteButton>
                 <!-- button component -->
 
