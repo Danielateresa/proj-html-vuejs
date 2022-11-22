@@ -34,7 +34,7 @@ export const store = reactive({
         name: 'mary maxey',
         magazine: 'the guardian',
         img: '/info52x.jpg',
-        buttonText: 'explore the menu',
+        buttonText: 'read full article',
         text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis vero odit illo labore est nam architecto velit ducimus autem tenetur.'
     },
     {
@@ -42,7 +42,7 @@ export const store = reactive({
         img: '/info12x.jpg',
         magazine: 'globe and mail',
         title: 'perfect for groups',
-        buttonText: 'make a reservation',
+        buttonText: 'read full article',
         text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis vero odit illo labore est nam architecto velit ducimus autem tenetur.'
     }],
 
@@ -62,5 +62,19 @@ export const store = reactive({
         text: 'By admin | Juanuary 7th, 2020 | Categories: News'
     },
     ],
+
+    infoTable: {
+        slogan: 'fine dinign experience',
+        title: 'best table in town',
+        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo labore officia suscipit quia cumque.',
+        buttonText: 'explore the menu',
+    },
+
+    infoTakeout: {
+        slogan: 'fine dinign experience',
+        title: 'best table in town',
+        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo labore officia suscipit quia cumque.',
+        buttonText: 'view takeout menu',
+    },
 
 })
