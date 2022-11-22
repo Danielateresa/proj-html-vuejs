@@ -5,6 +5,8 @@ import CriticsAbtUs from '../components/sections/CriticsAbtUs.vue';
 import SiteJumbotron from '../components/sections/SiteJumbotron.vue';
 import NewsPromotions from '../components/sections/NewsPromotions.vue';
 import TakeoutNow from '../components/sections/TakeoutNow.vue';
+import MenuTakeout from '../components/sections/MenuTakeout.vue';
+import FocusOnPlate from '../components/sections/FocusOnPlate.vue';
 
 export default {
     name: 'AppMain',
@@ -15,7 +17,8 @@ export default {
         SiteJumbotron,
         NewsPromotions,
         TakeoutNow,
-
+        MenuTakeout,
+        FocusOnPlate,
     }
 }
 
@@ -29,7 +32,8 @@ export default {
     <SiteJumbotron />
     <NewsPromotions />
     <TakeoutNow />
-
+    <MenuTakeout />
+    <FocusOnPlate />
 
 </template>
 

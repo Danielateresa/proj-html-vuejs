@@ -147,5 +147,12 @@ export const store = reactive({
             }]
         },
 
-    ]
+    ],
+
+    plateFocus: {
+        price: '$ 52',
+        title: 'braised abalone',
+        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo labore officia suscipit quia cumque.',
+        buttonText: 'view in the menu',
+    },
 })

@@ -31,7 +31,7 @@ export default {
         </div>
         <!-- /.right_tags -->
 
-        <div class="container py-3">
+        <div class="container_large py-3">
 
             <nav class="header_navbar d-flex justify-content-between align-items-center">
 
@@ -106,6 +106,11 @@ export default {
     background-size: 60%;
     background-repeat: no-repeat;
     position: relative;
+
+    .container_large {
+        margin: 0 auto;
+        width: 80%;
+    }
 
     .right_tags {
         position: absolute;

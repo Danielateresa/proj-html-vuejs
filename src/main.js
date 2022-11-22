@@ -8,7 +8,13 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 import { faStar } from '@fortawesome/free-solid-svg-icons'
 import { faCar } from '@fortawesome/free-solid-svg-icons'
-library.add(faShoppingCart, faStar, faCar)
+import { faFacebookF } from '@fortawesome/free-brands-svg-icons'
+import { faTwitter } from '@fortawesome/free-brands-svg-icons'
+import { faYoutube } from '@fortawesome/free-brands-svg-icons'
+import { faInstagram } from '@fortawesome/free-brands-svg-icons'
+import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
+
+library.add(faShoppingCart, faStar, faCar, faFacebookF, faTwitter, faYoutube, faInstagram, faLinkedinIn)
 
 
 createApp(App)
