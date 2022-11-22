@@ -21,9 +21,9 @@ export default {
         <h3 class="my-5 ">What critics are saying about us</h3>
 
         <div class="container my-4 p-2 text-start">
-            <div class="row upper ">
-                <div class="col-6 ps-5 h-100 text-end pe-0">
-                    <img class="" src="../../assets/img/blog72x-600x687.jpg" alt="cooking woman">
+            <div class="row upper w-100">
+                <div class="col-6 h-100 text-end gy-0 px-0">
+                    <img class="w-100" src="../../assets/img/blog72x-600x687.jpg" alt="cooking woman">
                 </div>
                 <!-- /.col-6 -->
                 <div class="description col-6 d-flex flex-column justify-content-between">
@@ -55,22 +55,34 @@ export default {
             </div>
             <!-- /.upper-->
 
-            <div class="row row-cols-3 w-100 bottom ">
+            <div class="row row-cols-2 w-100 bottom mt-4 w-100">
 
-                <div class="col text-center" v-for="item in store.sectionFood">
+                <div class="col position-relative" v-for="critic in store.critics">
+                    <div class="text_box">
+                        <span class="text-uppercase">{{ critic.name }}</span>
+                        <h2 class="text-uppercase mt-4">{{ critic.magazine }}</h2>
 
-                    <img :src="`../../../src/assets/img${item.img}`" alt="">
-                    <h5 class="text-uppercase mt-4">{{ item.title }}</h5>
-                    <div class="line mt-4"></div>
-                    <p class="mt-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis vero odit illo
-                        labore est nam
-                        architecto velit ducimus autem tenetur.</p>
+                        <div class="stars d-flex gap-2">
+                            <span class="my-2" v-for="index in 5">
+                                <font-awesome-icon icon="fa-solid fa-star" />
+                            </span>
+                        </div>
+                        <!-- /.stars -->
 
-                    <siteButton class="site_button mt-4">
-                        {{ item.buttonText }}
-                    </siteButton>
-                    <!-- button component -->
+                        <div class="line mt-4"></div>
+                        <p class="mt-4">{{ critic.text }}</p>
 
+                        <siteButton class="site_button mt-4">
+                            {{ critic.buttonText }}
+                        </siteButton>
+                        <!-- button component -->
+                    </div>
+                    <div class=" position-relative">
+                        <img class="" :src="`../../../src/assets/img${critic.img}`" alt="eating woman">
+                        <div class="layer h-100 w-100">
+
+                        </div>
+                    </div>
                 </div>
                 <!-- iterazione per ottenere 3 colonne -->
 
@@ -91,7 +103,7 @@ export default {
 
     &:hover {
         transform: scale(105%);
-        transition: ease 0.5s;
+        transition: ease-in-out 0.5s;
         box-shadow: 0.1rem 0 2rem 0.5rem $shadow;
 
     }
@@ -103,24 +115,51 @@ export default {
     height: min-content;
 }
 
-.col-6 {
-    color: $silver;
+.col-6,
+span,
+.text_box p,
+h2,
+.stars {
+    color: $light;
+}
 
-    h2,
-    .stars {
-        color: $light;
+.site_button {
+    width: fit-content;
+    color: $silver;
+    border: 1px solid $silver;
+    margin-top: 40px;
+
+    &:hover {
+        background-color: $light;
+        color: $dark;
+    }
+}
+
+
+
+.bottom {
+
+    .layer {
+        background-image: linear-gradient($dark, rgba(255, 255, 255, 0));
+        position: absolute;
+        top: 0;
+
     }
 
-    .site_button {
-        width: 50%;
-        color: $light;
-        border: 1px solid $silver;
-        margin-top: 40px;
+    .col:first-child {
+        padding-left: 0
+    }
 
-        &:hover {
-            background-color: $light;
-            color: $dark;
-        }
+    .col:last-child {
+        padding-right: 0
+    }
+
+    .text_box {
+        color: $light;
+        position: absolute;
+        top: 30%;
+        margin: 0 7rem;
+        z-index: 5;
     }
 
 }

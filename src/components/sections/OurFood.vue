@@ -37,7 +37,7 @@ export default {
 
                 <div class="col-7 ps-5 h-100 text-end">
                     <div class="img_box position-relative">
-                        <img class="" src="../../assets/img/info22x.jpg" alt="sushi plate">
+                        <img src="../../assets/img/info22x.jpg" alt="sushi plate">
                         <span class="text-uppercase fs-6 fw-bold">california rolls -$22</span>
 
                     </div>
@@ -54,9 +54,7 @@ export default {
                     <img :src="`../../../src/assets/img${item.img}`" alt="">
                     <h5 class="text-uppercase mt-4">{{ item.title }}</h5>
                     <div class="line mt-4"></div>
-                    <p class="mt-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis vero odit illo
-                        labore est nam
-                        architecto velit ducimus autem tenetur.</p>
+                    <p class="mt-4">{{ item.text }}</p>
 
                     <siteButton class="site_button mt-4">
                         {{ item.buttonText }}
@@ -93,8 +91,15 @@ export default {
     }
 
     .col-7 {
-        img {
+        .img_box {
             width: 100%;
+
+            &:hover {
+                transform: scale(105%);
+                transition: ease-in-out 0.5s;
+                box-shadow: 0.1rem 0 2rem 0.5rem $shadow;
+
+            }
         }
 
         span {

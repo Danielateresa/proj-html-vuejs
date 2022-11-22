@@ -76,7 +76,7 @@ export default {
         }
 
         .site_button {
-            color: $light;
+            color: $silver;
             border: 1px solid $silver;
             margin-top: 40px;
 
