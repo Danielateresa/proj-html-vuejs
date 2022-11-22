@@ -9,7 +9,7 @@ export const store = reactive({
         'Takeout',
         'Bulletin',
         'Reservations',
-        'cart'],
+        'Cart'],
 
     sectionFood: [{
         img: '/sushi-1.png',

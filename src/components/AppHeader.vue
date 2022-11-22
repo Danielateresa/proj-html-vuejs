@@ -19,6 +19,17 @@ export default {
 <template>
 
     <div id="site_header">
+        <div class="right_tags">
+            <div class="square rounded-1 text-center">
+                <div class="small_square rounded-1"></div>
+                <span>Demos</span>
+            </div>
+            <div class="square rounded-1 text-center mt-2">
+                <h3><span>$</span>39</h3>
+                <span>On Sale</span>
+            </div>
+        </div>
+        <!-- /.right_tags -->
 
         <div class="container py-3">
 
@@ -29,9 +40,20 @@ export default {
                 </div>
                 <!-- /.left_nav -->
 
-                <div class="right_nav">
-                    <a href="" v-for="link in store.headerLinks">{{ link }}</a>
-                    <!-- modificare cart con font owesome -->
+                <div class="right_nav d-flex">
+
+                    <div class="links ms-2" v-for="link in store.headerLinks">
+                        <a :class="link === 'Home' ? 'active' : ''" href=""
+                            v-if="link !== 'Takeout' && link !== 'Cart'">{{
+                                    link
+                            }}</a>
+                        <a href="" v-else-if="link === 'Cart'">
+                            <font-awesome-icon icon="fa-solid fa-shopping-cart" />
+                        </a>
+                        <a href="" v-else>{{ link }}<span class="new ms-2">New</span></a>
+                        <!-- singolo link -->
+                    </div>
+
                 </div>
                 <!-- /.right_nav -->
 
@@ -83,15 +105,63 @@ export default {
     background-position: right;
     background-size: 60%;
     background-repeat: no-repeat;
+    position: relative;
+
+    .right_tags {
+        position: absolute;
+        right: 20px;
+        top: 100px;
+
+
+        .square {
+            width: 60px;
+            aspect-ratio: 1/1;
+            background-color: $light;
+            padding-top: 1rem;
+
+            span {
+                font-size: 12px;
+                font-weight: bold;
+            }
+
+            h3 {
+                color: $price;
+                font-weight: bold;
+                position: relative;
+                line-height: 0;
+
+                span {
+                    position: absolute;
+                    top: -6px;
+                    left: 8px
+                }
+            }
+
+            .small_square {
+                width: 20px;
+                aspect-ratio: 1/1;
+                margin: 0 auto;
+                background-color: $squareTag;
+            }
+        }
+    }
 
     a {
-        margin-left: 2rem;
+        font-weight: bold;
+        margin-left: 1rem;
         text-decoration: none;
         color: $silver;
 
         &:hover {
             color: $light;
         }
+    }
+
+    .new {
+        border: 1px solid $silver;
+        padding: 0.2rem 0.5rem;
+        font-size: 12px;
+        font-weight: bold;
     }
 
     .col-3 {
@@ -123,5 +193,8 @@ export default {
         }
     }
 
+    .active {
+        color: $light;
+    }
 }
 </style>

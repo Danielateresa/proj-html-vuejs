@@ -18,7 +18,7 @@ export default {
 <template>
 
     <section class="best_table">
-        <div class="container py-4">
+        <div class="container">
             <div class="row w-100 d-flex justify-content-end ">
                 <div class="col-1">
                     <div class="line me-5 mt-2"></div>
@@ -60,7 +60,6 @@ export default {
     background-position: left;
     background-size: 55%;
     background-repeat: no-repeat;
-    height: 500px;
     padding: 8rem 0;
 
     .line {

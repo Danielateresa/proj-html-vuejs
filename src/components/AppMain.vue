@@ -1,11 +1,13 @@
 <script>
 import OurFood from '../components/sections/ourFood.vue';
 import BestTable from '../components/sections/BestTable.vue';
+import CriticsAbtUs from '../components/sections/CriticsAbtUs.vue';
 export default {
     name: 'AppMain',
     components: {
         OurFood,
-        BestTable
+        BestTable,
+        CriticsAbtUs
     }
 }
 
@@ -15,6 +17,7 @@ export default {
 
     <OurFood />
     <BestTable />
+    <CriticsAbtUs />
 
 </template>
 
