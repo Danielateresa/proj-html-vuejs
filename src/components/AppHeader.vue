@@ -31,7 +31,7 @@ export default {
         </div>
         <!-- /.right_tags -->
 
-        <div class="container_large py-3">
+        <div class="container py-3 gx-0">
 
             <nav class="header_navbar d-flex justify-content-between align-items-center">
 
@@ -69,18 +69,16 @@ export default {
                 <div class="col-3">
                     <div class="slogan">
 
-                        <h6 class="text-uppercase">the best table in town</h6>
+                        <h6 class="text-uppercase slogan">{{ store.infoTable.title }}</h6>
                     </div>
                     <div class="text">
-                        <h1 class="text-uppercase py-4">fine dining experience</h1>
-                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo labore officia suscipit quia
-                            cumque
-                            quae iste quas cupiditate quibusdam quaerat.</p>
+                        <h1 class="text-uppercase py-5">{{ store.infoTable.slogan }}</h1>
+                        <p>{{ store.infoTable.text }}</p>
 
                     </div>
 
                     <siteButton class="site_button">
-                        explore the menu
+                        {{ store.infoTable.buttonText }}
                     </siteButton>
                     <!-- button component -->
 
@@ -106,10 +104,11 @@ export default {
     background-size: 60%;
     background-repeat: no-repeat;
     position: relative;
+    height: 930px;
 
-    .container_large {
+    .container {
         margin: 0 auto;
-        width: 80%;
+        margin: 0 auto
     }
 
     .right_tags {
@@ -171,14 +170,10 @@ export default {
 
     .col-3 {
         color: $silver;
-
-        h1 {
-            color: $light;
-        }
     }
 
     .row {
-        margin: 100px 0
+        margin: 145px 0;
     }
 
     .line {

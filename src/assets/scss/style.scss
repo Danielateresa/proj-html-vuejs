@@ -1,5 +1,6 @@
 @use "../node_modules/bootstrap/scss/bootstrap";
-@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@700&family=Merriweather&family=Metal&family=Roboto:wght@700&display=swap');
+@use '../scss/partials/variables' as*;
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@600&family=Merriweather&family=Metal&family=Roboto:wght@600&display=swap');
 
 
 /* 
@@ -10,4 +11,25 @@ font-family: 'Roboto', sans-serif; slogan-bottoni
 */
 img {
     max-width: 100%;
+}
+
+h1 {
+    font-family: 'Antonio', sans-serif;
+    color: $light;
+    font-size: 60px;
+    line-height: 1.7;
+}
+
+button,
+.slogan {
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    font-family: 'Merriweather', serif;
+    line-height: 1.9;
+}
+
+.slogan {
+    font-size: 14px;
 }

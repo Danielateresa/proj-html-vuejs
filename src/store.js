@@ -64,7 +64,7 @@ export const store = reactive({
 
     infoTable: {
         slogan: 'fine dinign experience',
-        title: 'best table in town',
+        title: 'the best table in town',
         text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo labore officia suscipit quia cumque.',
         buttonText: 'explore the menu',
     },
