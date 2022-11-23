@@ -28,13 +28,18 @@ export default {
                             <h5 class="text-uppercase mt-4">{{ data.title }}</h5>
                             <p class="mt-4">{{ data.text }}</p>
                         </div>
+                        <!-- /.default_layer -->
 
                         <div class="overlay h-100">
                             <div class="layer h-100 w-100"></div>
                             <img class="w-100 h-100" :src="`../../../src/assets/img${data.img}`" alt="{{ data.title }}">
                             <h5 class="text-uppercase mt-4">{{ data.title }}</h5>
                         </div>
+                        <!-- /.overlay -->
+
                     </div>
+                    <!-- ./card_col -->
+
                 </div>
                 <!-- iterazione per ottenere 3 colonne -->
 
@@ -55,12 +60,10 @@ export default {
 }
 
 .overlay {
-
-
     opacity: 0;
 
     .layer {
-        background-image: linear-gradient($dark, rgba(255, 255, 255, 0));
+        background-image: linear-gradient($dark 30%, rgba(255, 255, 255, 0));
         position: absolute;
         top: 0;
         left: 0;
