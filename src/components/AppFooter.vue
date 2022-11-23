@@ -1,6 +1,8 @@
 <script>
+import { store } from '../store.js';
 export default {
     name: 'AppFooter',
+
 }
 
 </script>
@@ -46,14 +48,14 @@ export default {
 #site_footer {
     background-image: url(../assets/img/footer2x.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+    background-position: bottom;
 
 
     .bottom_bar {
         text-align: center;
         background-color: $dark;
         color: $silver;
-
     }
 }
 
@@ -68,9 +70,10 @@ export default {
     }
 
     .social {
-
-        color: $dark;
-        margin-bottom: 3.5rem;
+        a {
+            color: $dark;
+            margin-bottom: 3.5rem;
+        }
 
         .round_box {
             display: inline-block;
@@ -85,7 +88,5 @@ export default {
             margin-top: 1rem;
         }
     }
-
-
 }
 </style>
