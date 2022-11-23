@@ -17,7 +17,7 @@ export default {
 
 <template>
 
-    <section class="best_table">
+    <section class=" best_table">
 
         <InfoComponent :title="store.infoTable.title" :slogan="store.infoTable.slogan" :text="store.infoTable.text"
             :button="store.infoTable.buttonText" />
@@ -36,7 +36,5 @@ export default {
     background-size: 55%;
     background-repeat: no-repeat;
     padding: 8rem 0;
-
-
 }
 </style>

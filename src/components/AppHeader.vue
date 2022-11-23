@@ -133,6 +133,8 @@ export default {
                 font-weight: bold;
                 position: relative;
                 line-height: 0;
+                font-family: 'Roboto', sans-serif;
+                font-size: 25px;
 
                 span {
                     position: absolute;

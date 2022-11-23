@@ -44,7 +44,7 @@ export default {
 
             <div class="row row-cols-3 w-100 bottom ">
 
-                <div class="col text-center" v-for="item in store.sectionFood">
+                <div class="col text-center gx-5 gy-2" v-for="item in store.sectionFood">
 
                     <img :src="`../../../src/assets/img/${item.img}`" alt="">
                     <h5 class="text-uppercase mt-4">{{ item.title }}</h5>

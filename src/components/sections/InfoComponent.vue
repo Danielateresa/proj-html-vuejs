@@ -11,9 +11,7 @@ export default {
     },
     components: {
         SiteButton,
-
     },
-
 }
 
 </script>

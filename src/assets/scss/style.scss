@@ -9,6 +9,7 @@ font-family: 'Merriweather', serif; paragrafi
 font-family: 'Metal', cursive; sezioni
 font-family: 'Roboto', sans-serif; slogan-bottoni
 */
+
 img {
     max-width: 100%;
 }
@@ -22,9 +23,18 @@ h1 {
 
 h2 {
     font-family: 'Antonio', sans-serif;
-    color: $dark;
     font-size: 48px;
     line-height: 1.7;
+}
+
+h3 {
+    font-family: 'Metal', cursive;
+    color: $dark;
+    font-size: 40px;
+}
+
+h4 {
+    font-family: 'Antonio', sans-serif;
 }
 
 h5 {

@@ -24,7 +24,7 @@ export default {
                 <div class="col text-center" v-for="data in store.news">
                     <div class="card_col position-relative">
                         <div class="default_layer">
-                            <img :src="`../../../src/assets/img${data.img}`" alt="{{ data.title }}">
+                            <img :src="`../../../src/assets/img/${data.img}`" alt="{{ data.title }}">
                             <h5 class="text-uppercase mt-4">{{ data.title }}</h5>
                             <p class="mt-4">{{ data.text }}</p>
                         </div>
@@ -32,7 +32,8 @@ export default {
 
                         <div class="overlay h-100">
                             <div class="layer h-100 w-100"></div>
-                            <img class="w-100 h-100" :src="`../../../src/assets/img${data.img}`" alt="{{ data.title }}">
+                            <img class="w-100 h-100" :src="`../../../src/assets/img/${data.img}`"
+                                alt="{{ data.title }}">
                             <h5 class="text-uppercase mt-4">{{ data.title }}</h5>
                         </div>
                         <!-- /.overlay -->

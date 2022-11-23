@@ -15,21 +15,28 @@ export const store = reactive({
         img: 'sushi-1.png',
         title: 'the best table in town',
         buttonText: 'explore the menu',
-        text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis vero odit illo labore est nam architecto velit ducimus autem tenetur.'
+        text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis vero odit illo labore est nam architecto velit ducimus.'
     },
     {
         img: 'sushi-2.png',
         title: 'perfect for groups',
         buttonText: 'make a reservation',
-        text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis vero odit illo labore est nam architecto velit ducimus autem tenetur.'
+        text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis vero odit illo labore est nam architecto velit ducimus.'
     },
     {
         img: 'sushi-3.png',
         title: 'fresh produce everyday',
         buttonText: 'learn more about us',
-        text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis vero odit illo labore est nam architecto velit ducimus autem tenetur.'
+        text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis vero odit illo labore est nam architecto velit ducimus.'
     }],
 
+    upperCritic: {
+        name: 'meggt steart',
+        magazine: 'new york times',
+        buttonText: 'read full article',
+        text1: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti iusto accusamus molestias repudiandae hic iure inventore dolor dolores repellendus consequatur?',
+        text2: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti iusto accusamus molestias.'
+    },
     critics: [{
         name: 'mary maxey',
         magazine: 'the guardian',
@@ -165,3 +172,4 @@ export const store = reactive({
         buttonText: 'view in the menu',
     },
 })
+
