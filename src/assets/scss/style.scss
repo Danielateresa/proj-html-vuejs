@@ -1,6 +1,13 @@
 @use "../node_modules/bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@700&family=Merriweather&family=Metal&family=Roboto:wght@700&display=swap');
 
 
+/* 
+font-family: 'Antonio', sans-serif;  titoli
+font-family: 'Merriweather', serif; paragrafi
+font-family: 'Metal', cursive; sezioni
+font-family: 'Roboto', sans-serif; slogan-bottoni
+*/
 img {
     max-width: 100%;
 }
