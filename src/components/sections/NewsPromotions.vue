@@ -21,18 +21,20 @@ export default {
         <div class="container my-4 p-2 d-flex flex-column text-center">
             <div class="row row-cols-3 w-100 bottom ">
 
-                <div class="col text-center position-relative" v-for="data in store.news">
-                    <div class="default_layer">
-                        <img :src="`../../../src/assets/img${data.img}`" alt="{{ data.title }}">
-                        <h5 class="text-uppercase mt-4">{{ data.title }}</h5>
-                        <p class="mt-4">{{ data.text }}</p>
-                    </div>
-                    <div class="overlay">
-                        <div class="layer h-100 w-100"></div>
-                        <img :src="`../../../src/assets/img${data.img}`" alt="{{ data.title }}">
-                        <h5 class="text-uppercase mt-4">{{ data.title }}</h5>
-                    </div>
+                <div class="col text-center" v-for="data in store.news">
+                    <div class="card_col position-relative">
+                        <div class="default_layer">
+                            <img :src="`../../../src/assets/img${data.img}`" alt="{{ data.title }}">
+                            <h5 class="text-uppercase mt-4">{{ data.title }}</h5>
+                            <p class="mt-4">{{ data.text }}</p>
+                        </div>
 
+                        <div class="overlay h-100">
+                            <div class="layer h-100 w-100"></div>
+                            <img class="w-100 h-100" :src="`../../../src/assets/img${data.img}`" alt="{{ data.title }}">
+                            <h5 class="text-uppercase mt-4">{{ data.title }}</h5>
+                        </div>
+                    </div>
                 </div>
                 <!-- iterazione per ottenere 3 colonne -->
 
@@ -53,13 +55,23 @@ export default {
 }
 
 .overlay {
-    position: absolute;
-    top: 0;
+
+
     opacity: 0;
 
     .layer {
         background-image: linear-gradient($dark, rgba(255, 255, 255, 0));
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+    }
 
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover;
     }
 
     h5 {
@@ -70,11 +82,13 @@ export default {
         -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
-        text-align: center;
+        width: max-content;
+        z-index: 3;
     }
+}
 
-    &:hover {
-        opacity: 1;
-    }
+.card_col:hover .overlay {
+    opacity: 1;
+    transition: ease-in-out 0.1s;
 }
 </style>
