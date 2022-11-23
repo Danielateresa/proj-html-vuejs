@@ -64,7 +64,7 @@ export default {
     opacity: 0;
 
     .layer {
-        background-image: linear-gradient($dark 30%, rgba(255, 255, 255, 0));
+        background-image: linear-gradient($dark 10%, rgba(255, 255, 255, 0));
         position: absolute;
         top: 0;
         left: 0;
