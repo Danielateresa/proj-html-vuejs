@@ -21,11 +21,17 @@ export default {
         <div class="container my-4 p-2 d-flex flex-column text-center">
             <div class="row row-cols-3 w-100 bottom ">
 
-                <div class="col text-center" v-for="data in store.news">
-
-                    <img :src="`../../../src/assets/img${data.img}`" alt="">
-                    <h5 class="text-uppercase mt-4">{{ data.title }}</h5>
-                    <p class="mt-4">{{ data.text }}</p>
+                <div class="col text-center position-relative" v-for="data in store.news">
+                    <div class="default_layer">
+                        <img :src="`../../../src/assets/img${data.img}`" alt="{{ data.title }}">
+                        <h5 class="text-uppercase mt-4">{{ data.title }}</h5>
+                        <p class="mt-4">{{ data.text }}</p>
+                    </div>
+                    <div class="overlay">
+                        <div class="layer h-100 w-100"></div>
+                        <img :src="`../../../src/assets/img${data.img}`" alt="{{ data.title }}">
+                        <h5 class="text-uppercase mt-4">{{ data.title }}</h5>
+                    </div>
 
                 </div>
                 <!-- iterazione per ottenere 3 colonne -->
@@ -44,5 +50,31 @@ export default {
     border-bottom: 1px solid $silver;
     width: 50px;
     height: min-content;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+
+    .layer {
+        background-image: linear-gradient($dark, rgba(255, 255, 255, 0));
+
+    }
+
+    h5 {
+        color: $light;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    &:hover {
+        opacity: 1;
+    }
 }
 </style>
