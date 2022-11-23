@@ -23,22 +23,17 @@ export default {
                 <div class="col-5 pt-5 d-flex flex-column justify-content-between">
 
 
-                    <p class="py-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-                        minus vitae rerum
-                        aspernatur
-                        eius perferendis quis natus debitis rem autem.</p>
-                    <h2 class="text-uppercase pb-2">food is our common ground, a universal experience.</h2>
-                    <p class="py-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti iusto accusamus
-                        molestias
-                        repudiandae hic iure inventore dolor dolores repellendus consequatur?</p>
-                    <img src="../../assets/img/signature-200x172.jpg" alt="signature">
+                    <p class="py-2">{{ store.ourFood.firstPharag }}</p>
+                    <h2 class="text-uppercase pb-2">{{ store.ourFood.title }}</h2>
+                    <p class="py-2">{{ store.ourFood.secondPharag }}</p>
+                    <img :src="`../../src/assets/img/${store.ourFood.signature}`" alt="signature">
                 </div>
                 <!-- /.col-5 -->
 
                 <div class="col-7 ps-5 h-100 text-end">
                     <div class="img_box position-relative">
-                        <img src="../../assets/img/info22x.jpg" alt="sushi plate">
-                        <span class="text-uppercase fs-6 fw-bold">california rolls -$22</span>
+                        <img :src="`../../src/assets/img/${store.ourFood.img}`" alt="sushi plate">
+                        <span class="text-uppercase fs-6 fw-bold">{{ store.ourFood.plateDescription }}</span>
 
                     </div>
 
@@ -51,7 +46,7 @@ export default {
 
                 <div class="col text-center" v-for="item in store.sectionFood">
 
-                    <img :src="`../../../src/assets/img${item.img}`" alt="">
+                    <img :src="`../../../src/assets/img/${item.img}`" alt="">
                     <h5 class="text-uppercase mt-4">{{ item.title }}</h5>
                     <div class="line mt-4"></div>
                     <p class="mt-4">{{ item.text }}</p>

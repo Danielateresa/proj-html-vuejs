@@ -12,19 +12,19 @@ export const store = reactive({
         'Cart'],
 
     sectionFood: [{
-        img: '/sushi-1.png',
+        img: 'sushi-1.png',
         title: 'the best table in town',
         buttonText: 'explore the menu',
         text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis vero odit illo labore est nam architecto velit ducimus autem tenetur.'
     },
     {
-        img: '/sushi-2.png',
+        img: 'sushi-2.png',
         title: 'perfect for groups',
         buttonText: 'make a reservation',
         text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis vero odit illo labore est nam architecto velit ducimus autem tenetur.'
     },
     {
-        img: '/sushi-3.png',
+        img: 'sushi-3.png',
         title: 'fresh produce everyday',
         buttonText: 'learn more about us',
         text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis vero odit illo labore est nam architecto velit ducimus autem tenetur.'
@@ -33,31 +33,31 @@ export const store = reactive({
     critics: [{
         name: 'mary maxey',
         magazine: 'the guardian',
-        img: '/info52x.jpg',
+        img: 'info52x.jpg',
         buttonText: 'read full article',
         text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis vero odit illo labore est nam architecto velit ducimus autem tenetur.'
     },
     {
         name: 'patrick monroe',
         magazine: 'globe and mail',
-        img: '/info12x.jpg',
+        img: 'info12x.jpg',
         buttonText: 'read full article',
         text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis vero odit illo labore est nam architecto velit ducimus autem tenetur.'
     }],
 
     news: [{
         title: 'the best coffe in town',
-        img: '/blog92x-600x687.jpg',
+        img: 'blog92x-600x687.jpg',
         text: 'By admin | Juanuary 7th, 2020 | Categories: News'
     },
     {
         title: 'discover our new menu',
-        img: '/blog72x-600x687.jpg',
+        img: 'blog72x-600x687.jpg',
         text: 'By admin | Juanuary 7th, 2020 | Categories: News'
     },
     {
         title: 'we now accept square!',
-        img: '/blog82x-600x687.jpg',
+        img: 'blog82x-600x687.jpg',
         text: 'By admin | Juanuary 7th, 2020 | Categories: News'
     },
     ],
@@ -67,6 +67,15 @@ export const store = reactive({
         title: 'the best table in town',
         text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo labore officia suscipit quia cumque.',
         buttonText: 'explore the menu',
+    },
+
+    ourFood: {
+        firstPharag: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat minus vitae rerum aspernatur eius perferendis quis natus debitis rem autem.',
+        title: 'food is our common ground, a universal experience.',
+        secondPharag: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti iusto accusamus molestias repudiandae hic iure inventore dolor dolores repellendus consequatur?',
+        signature: 'signature-200x172.jpg',
+        img: 'info22x.jpg',
+        plateDescription: 'california rolls - $22',
     },
 
     infoTakeout: {
