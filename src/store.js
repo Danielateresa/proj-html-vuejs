@@ -77,7 +77,7 @@ export const store = reactive({
     },
 
     ourFood: {
-        firstPharag: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat minus vitae rerum aspernatur eius perferendis quis natus debitis rem autem.',
+        firstPharag: '<b>Lorem ipsum dolor sit amet</b> consectetur adipisicing elit. Quaerat minus vitae rerum aspernatur eius perferendis quis natus debitis rem autem.',
         title: 'food is our common ground, a universal experience.',
         secondPharag: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti iusto accusamus molestias repudiandae hic iure inventore dolor dolores repellendus consequatur?',
         signature: 'signature-200x172.jpg',

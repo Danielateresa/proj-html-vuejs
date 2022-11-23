@@ -23,7 +23,7 @@ export default {
                 <div class="col-5 pt-5 d-flex flex-column justify-content-between">
 
 
-                    <p class="py-2">{{ store.ourFood.firstPharag }}</p>
+                    <p class="py-2" v-html="store.ourFood.firstPharag"></p>
                     <h2 class="text-uppercase pb-2">{{ store.ourFood.title }}</h2>
                     <p class="py-2">{{ store.ourFood.secondPharag }}</p>
                     <img :src="`../../src/assets/img/${store.ourFood.signature}`" alt="signature">
