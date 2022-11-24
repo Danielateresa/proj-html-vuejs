@@ -1,12 +1,12 @@
 <script>
-import OurFood from '../components/sections/ourFood.vue';
-import BestTable from '../components/sections/BestTable.vue';
-import CriticsAbtUs from '../components/sections/CriticsAbtUs.vue';
-import SiteJumbotron from '../components/sections/SiteJumbotron.vue';
-import NewsPromotions from '../components/sections/NewsPromotions.vue';
-import TakeoutNow from '../components/sections/TakeoutNow.vue';
-import MenuTakeout from '../components/sections/MenuTakeout.vue';
-import FocusOnPlate from '../components/sections/FocusOnPlate.vue';
+import OurFood from './sections/ourFood.vue';
+import BestTable from './sections/BestTable.vue';
+import CriticsAbtUs from './sections/CriticsAbtUs.vue';
+import SiteJumbotron from './sections/SiteJumbotron.vue';
+import NewsPromotions from './sections/NewsPromotions.vue';
+import TakeoutNow from './sections/TakeoutNow.vue';
+import MenuTakeout from './sections/MenuTakeout.vue';
+import FocusOnPlate from './sections/FocusOnPlate.vue';
 
 export default {
     name: 'AppMain',

@@ -31,7 +31,7 @@ export const store = reactive({
     }],
 
     upperCritic: {
-        name: 'meggt steart',
+        name: 'meggy stewart',
         magazine: 'new york times',
         buttonText: 'read full article',
         text1: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti iusto accusamus molestias repudiandae hic iure inventore dolor dolores repellendus consequatur?',
@@ -70,7 +70,7 @@ export const store = reactive({
     ],
 
     infoTable: {
-        slogan: 'fine dinign experience',
+        slogan: 'fine dining experience',
         title: 'the best table in town',
         text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo labore officia suscipit quia cumque.',
         buttonText: 'explore the menu',
